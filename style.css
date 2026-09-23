@@ -12,6 +12,7 @@
     box-sizing: border-box;
 }
 
+
 body.page-main {
     font-family: var(--font-main);
     background-color: #ffffff;
@@ -52,6 +53,7 @@ body.page-main aside {
     background-color: #f9f9f9;
     margin-bottom: 20px;
 }
+
 
 body.page-book {
     font-family: var(--font-book);
@@ -169,30 +171,36 @@ form input, form textarea {
     border: 2px solid var(--beige-light);
     background-color: #fdfbf7;
     border-radius: 4px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, background-color 0.3s;
 }
 
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(139, 90, 43, 0.9);
-        border-color: #8b5a2b;
+        box-shadow: 0 0 0 0 rgba(139, 90, 43, 0.9),
+                    0 0 8px 2px rgba(139, 90, 43, 0.6);
+        border-color: #6f4e37;
+        background-color: #fff5e0;
     }
-    70% {
-        box-shadow: 0 0 0 12px rgba(139, 90, 43, 0);
+    50% {
+        box-shadow: 0 0 0 10px rgba(139, 90, 43, 0),
+                    0 0 20px 6px rgba(139, 90, 43, 0.4);
         border-color: #8b5a2b;
+        background-color: #fdfbf7;
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(139, 90, 43, 0);
-        border-color: #d2b48c;
+        box-shadow: 0 0 0 0 rgba(139, 90, 43, 0),
+                    0 0 8px 2px rgba(139, 90, 43, 0.6);
+        border-color: #6f4e37;
+        background-color: #fff5e0;
     }
 }
 
 form input:focus,
 form textarea:focus {
     outline: none !important;
-    border-color: #8b5a2b !important;
-    animation: pulse 1.2s ease-out infinite !important;
+    border: 2px solid #8b5a2b !important;
+    animation: pulse 1s ease-in-out infinite !important;
 }
 
 form button {
