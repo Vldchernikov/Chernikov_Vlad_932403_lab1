@@ -12,7 +12,6 @@
     box-sizing: border-box;
 }
 
-/* ========== СТРАНИЦА 1: ЧЁРНО-БЕЛАЯ ========== */
 body.page-main {
     font-family: var(--font-main);
     background-color: #ffffff;
@@ -54,7 +53,6 @@ body.page-main aside {
     margin-bottom: 20px;
 }
 
-/* ========== СТРАНИЦА 2: КНИЖНАЯ ТЕМА ========== */
 body.page-book {
     font-family: var(--font-book);
     background-color: var(--bg-main);
@@ -94,7 +92,7 @@ body.page-book aside {
     border-radius: 0 5px 5px 0;
 }
 
-/* ========== НАВИГАЦИЯ ========== */
+
 .nav-link {
     text-align: center;
     margin-top: 10px;
@@ -126,7 +124,7 @@ body.page-book .nav-link {
     color: #5a4a42;
 }
 
-/* ========== СПИСКИ ========== */
+
 ul {
     padding-left: 20px;
 }
@@ -152,7 +150,7 @@ body.page-book ol li::before {
     left: 0;
 }
 
-/* ========== ФОРМА ========== */
+
 form {
     margin-top: 15px;
 }
@@ -174,7 +172,7 @@ form input, form textarea {
     transition: border-color 0.3s;
 }
 
-/* УСИЛЕННАЯ ПУЛЬСАЦИЯ РАМКИ ПРИ :focus */
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(139, 90, 43, 0.9);
@@ -218,7 +216,7 @@ form button:active {
     transform: scale(0.97);
 }
 
-/* ========== КАРТОЧКИ ИГР (для главной) ========== */
+
 .games-grid {
     display: flex;
     flex-wrap: wrap;
@@ -250,7 +248,7 @@ form button:active {
     margin: 5px 0;
 }
 
-/* ========== ФОТО ========== */
+
 .photo-block {
     text-align: center;
     margin: 20px 0;
@@ -267,7 +265,7 @@ form button:active {
     border: 1px solid #ccc;
 }
 
-/* ========== КАРТОЧКИ ПРОЕКТОВ С ПЕРЕВОРОТОМ ========== */
+
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -321,7 +319,7 @@ form button:active {
     transform: rotateY(180deg);
 }
 
-/* ========== ПОДВАЛ ========== */
+
 footer {
     text-align: center;
     margin-top: 20px;
