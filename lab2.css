@@ -1,15 +1,13 @@
-/* === CSS ПЕРЕМЕННЫЕ (требование ЛР2) === */
 :root {
-    --bg-main: #f4ecd8;       /* Основной бежевый */
-    --bg-card: #fff8dc;       /* Светло-бежевый для карточек */
-    --text-main: #4a3b32;     /* Темно-коричневый (высокий контраст) */
-    --accent-brown: #8b5a2b;  /* Акцентный коричневый */
-    --beige-light: #d2b48c;   /* Светлый бежевый для шапки */
+    --bg-main: #f4ecd8;       
+    --bg-card: #fff8dc;       
+    --text-main: #4a3b32;     
+    --accent-brown: #8b5a2b;  
+    --beige-light: #d2b48c;   
     --shadow-color: rgba(139, 90, 43, 0.5);
     --font-main: Georgia, serif;
 }
 
-/* === БАЗОВЫЕ СТИЛИ И СБРОС === */
 * {
     box-sizing: border-box;
 }
@@ -22,10 +20,9 @@ body {
     margin: 0 auto;
     padding: 20px;
     line-height: 1.6;
-    position: static; /* Пример позиционирования: static */
+    position: static; 
 }
 
-/* === ШАПКА (Header) === */
 header {
     background-color: var(--beige-light);
     color: #3e2723;
@@ -33,12 +30,12 @@ header {
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-    position: relative; /* Пример позиционирования: relative */
+    position: relative; 
 }
 
-/* Навигационная ссылка в углу */
+
 .nav-link {
-    position: absolute; /* Пример позиционирования: absolute */
+    position: absolute; 
     top: 15px;
     right: 15px;
 }
@@ -53,24 +50,22 @@ header {
     transition: background-color 0.3s;
 }
 
-/* === СОСТОЯНИЯ ЭЛЕМЕНТОВ (требование ЛР2) === */
-/* :hover */
 .nav-link a:hover {
     background-color: var(--accent-brown);
     color: var(--bg-card);
 }
 
-/* :visited */
+
 .nav-link a:visited {
     color: #5a4a42;
 }
 
-/* :active */
+
 button:active {
     transform: scale(0.98);
 }
 
-/* :focus (Пульсация рамки по заданию Варианта 10) */
+
 @keyframes pulse {
     0% { box-shadow: 0 0 0 0 var(--shadow-color); }
     70% { box-shadow: 0 0 0 10px rgba(139, 90, 43, 0); }
@@ -83,7 +78,7 @@ input:focus, textarea:focus {
     border-color: var(--accent-brown);
 }
 
-/* === ОСНОВНОЙ КОНТЕНТ === */
+
 main {
     background-color: var(--bg-card);
     padding: 25px;
@@ -95,15 +90,15 @@ section {
     margin-bottom: 30px;
 }
 
-/* === СПИСКИ (требование Варианта 10: стили для нумерованного списка) === */
+
 ul {
     padding-left: 20px;
 }
 
 ol {
-    padding-left: 25px; /* Отступы для нумерации */
+    padding-left: 25px; 
     counter-reset: item;
-    list-style-type: none; /* Убираем стандартные цифры */
+    list-style-type: none; 
 }
 
 ol li {
@@ -112,7 +107,7 @@ ol li {
     padding-left: 30px;
 }
 
-/* Кастомная нумерация */
+
 ol li::before {
     content: counter(item) ". ";
     counter-increment: item;
@@ -122,7 +117,7 @@ ol li::before {
     left: 0;
 }
 
-/* === БОКОВАЯ ПАНЕЛЬ (Aside) === */
+
 aside {
     background-color: #eaddcf;
     border-left: 5px solid var(--accent-brown);
@@ -131,7 +126,7 @@ aside {
     border-radius: 0 5px 5px 0;
 }
 
-/* === ЭФФЕКТ ПЕРЕВОРОТА КАРТОЧЕК (Задание Варианта 10) === */
+
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -140,7 +135,7 @@ aside {
 }
 
 .project-card {
-    perspective: 1000px; /* Глубина для 3D-эффекта */
+    perspective: 1000px; 
     width: 250px;
     height: 180px;
 }
@@ -154,7 +149,7 @@ aside {
     transform-style: preserve-3d;
 }
 
-/* Эффект переворота при наведении */
+
 .project-card:hover .card-inner {
     transform: rotateY(180deg);
 }
@@ -183,10 +178,9 @@ aside {
 .card-back {
     background-color: var(--accent-brown);
     color: var(--bg-card);
-    transform: rotateY(180deg); /* Скрываем обратную сторону */
+    transform: rotateY(180deg); 
 }
 
-/* === ФОРМА ОБРАТНОЙ СВЯЗИ === */
 form {
     margin-top: 15px;
 }
@@ -223,7 +217,7 @@ form button:hover {
     background-color: #6f4e37;
 }
 
-/* === ПОДВАЛ === */
+
 footer {
     text-align: center;
     margin-top: 20px;
