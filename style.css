@@ -343,6 +343,7 @@ footer {
 body.page-main footer {
     color: #333;
 }
+
 /* =========================================
    ЛАБОРАТОРНАЯ РАБОТА №3: Flexbox и Grid
    ========================================= */
@@ -350,15 +351,15 @@ body.page-main footer {
 /* --- 1. Flexbox: Навигационное меню --- */
 .main-nav {
     background-color: var(--beige-light);
-    padding: 1rem;
-    margin-top: 1.5rem;
+    padding: 15px;
+    margin-top: 20px;
     border-radius: 5px;
 }
 
 .nav-list {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 20px;
     list-style: none;
     flex-wrap: wrap;
     padding: 0;
@@ -369,7 +370,7 @@ body.page-main footer {
     color: #3e2723;
     text-decoration: none;
     font-weight: bold;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     border-radius: 4px;
     border: 1px solid transparent;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.2s;
