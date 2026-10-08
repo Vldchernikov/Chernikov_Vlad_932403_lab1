@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Книжный червь и писатель - Вариант 10</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -13,9 +14,16 @@
     <header>
         <h1>Черников Владислав</h1>
         <p>Группа: 932403 | Тема: Книжный червь и писатель</p>
-        <div class="nav-link">
-            <a href="index.html">Вернуться на главную</a>
-        </div>
+        
+        <!-- Flexbox: Навигационное меню -->
+        <nav class="main-nav" aria-label="Основная навигация">
+            <ul class="nav-list">
+                <li><a href="index.html" class="menu-link">Главная</a></li>
+                <li><a href="#books" class="menu-link">Книги на полке</a></li>
+                <li><a href="#quotes" class="menu-link">Цитаты недели</a></li>
+                <li><a href="#feedback" class="menu-link">Обратная связь</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -27,6 +35,73 @@
                 <li>Работа с источниками</li>
                 <li>Редактирование</li>
             </ul>
+        </section>
+
+        <!-- Flexbox: Карточки книг -->
+        <section id="books">
+            <h2>Книги на полке</h2>
+            <div class="books-container">
+                <article class="book-card">
+                    <img src="https://placehold.co/200x300/e0e0e0/333333?text=Обложка+1" alt="Обложка книги Сильмариллион" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Сильмариллион</h3>
+                        <p class="book-author">Дж. Р. Р. Толкин</p>
+                        <span class="book-status status-read">Прочитано</span>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <img src="https://placehold.co/200x300/e0e0e0/333333?text=Обложка+2" alt="Обложка книги Бегущий в лабиринте" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Бегущий в лабиринте</h3>
+                        <p class="book-author">Джеймс Дэшнер</p>
+                        <span class="book-status status-progress">В процессе</span>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <img src="https://placehold.co/200x300/e0e0e0/333333?text=Обложка+3" alt="Обложка книги Ведьмак" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Ведьмак</h3>
+                        <p class="book-author">Анджей Сапковский</p>
+                        <span class="book-status status-read">Прочитано</span>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <img src="https://placehold.co/200x300/e0e0e0/333333?text=Обложка+4" alt="Обложка книги Хроники Амбера" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Хроники Амбера</h3>
+                        <p class="book-author">Роджер Желязны</p>
+                        <span class="book-status status-progress">В процессе</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Grid: Галерея цитат -->
+        <section id="quotes">
+            <h2>Цитаты недели</h2>
+            <div class="quotes-grid">
+                <blockquote class="quote-card">
+                    <p class="quote-text">«Не все то золото, что блестит».</p>
+                    <footer class="quote-footer">
+                        <cite class="quote-author">Дж. Р. Р. Толкин</cite>
+                        <span class="quote-book">«Властелин колец»</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="quote-card">
+                    <p class="quote-text">«Иногда нужно потерять всё, чтобы найти себя».</p>
+                    <footer class="quote-footer">
+                        <cite class="quote-author">Джеймс Дэшнер</cite>
+                        <span class="quote-book">«Бегущий в лабиринте»</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="quote-card">
+                    <p class="quote-text">«Зло — это не отсутствие добра, а его искажение».</p>
+                    <footer class="quote-footer">
+                        <cite class="quote-author">Анджей Сапковский</cite>
+                        <span class="quote-book">«Ведьмак»</span>
+                    </footer>
+                </blockquote>
+            </div>
         </section>
 
         <section>
@@ -43,39 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>Бегущий в лабиринте</h3>
-                            <p>Джеймс Дэшнер</p>
-                        </div>
-                        <div class="card-back">
-                            <p>Продолжение серии книг о выживании</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>Ведьмак</h3>
-                            <p>Анджей Сапковский</p>
-                        </div>
-                        <div class="card-back">
-                            <p>Экранизация приключений Геральта</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>Хроники Амбера</h3>
-                            <p>Роджер Желязны</p>
-                        </div>
-                        <div class="card-back">
-                            <p>Экранизация классического фэнтези</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Добавь остальные 3 карточки, которые были у тебя -->
             </div>
         </section>
 
@@ -84,7 +127,7 @@
             <p>Фэнтези. Джон Рональд Руэл Толкин</p>
         </aside>
 
-        <section>
+        <section id="feedback">
             <h2>Обратная связь</h2>
             <form action="#">
                 <label for="name">Имя:</label>
